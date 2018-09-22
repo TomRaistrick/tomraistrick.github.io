@@ -1,3 +1,29 @@
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head><title>Change Title Dynamically:</title></head>
+<body>
+<form action="" method=POST name="SampleForm">
+<B>Enter Title for the window:</B>
+<textarea NAME=WindowTitle ROWS=1 COLS=50></textarea>
+<input TYPE=BUTTON VALUE="Change Title" ONCLICK="javascript:UpdateTitle()">
+</form>
+<script>
+<!--
+function UpdateTitle()
+{
+	title = $.get("https://www.bitmex.com/api/v1/instrument/compositeIndex?symbol=.BXBT&count=1&reverse=true", function(title){
+        console.log("t");
+        document.title = title;
+        });
+    
+}
+</script>
+
+
+    
+    </BODY>
+</html>
+
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div id="tradingview_8d85e"></div>
