@@ -1,33 +1,117 @@
 <html>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<head><title>Change Title Dynamically:</title></head>
-<body>
-<form action="" method=POST name="SampleForm">
-<B>Enter Title for the window:</B>
-<textarea NAME=WindowTitle ROWS=1 COLS=50></textarea>
-<input TYPE=BUTTON VALUE="Change Title" ONCLICK="javascript:UpdateTitle()">
-</form>
-<script>
-<!--
-function UpdateTitle()
-{
-	title = $.get("https://www.bitmex.com/api/v1/instrument/compositeIndex?symbol=.BXBT&count=1&reverse=true", function(title){
-        console.log("t");
-        document.title = title;
-        });
     
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+<div class="div1">
+<div class="div2">
+    
+ <div class="logos">
+     <div class="row1">
+        <img class="BTC"  src="img/BTC.png">
+        <img class="ETH"  src="img/ETH.png">
+        <img class="NEO"  src="img/NEO.png">
+        <img class="GAS"  src="img/GAS.png">
+        <img class="XMR"  src="img/XMR.png">
+        <img class="ZEC"  src="img/ZEC.png">
+     </div>
+     <div class="row2">
+        <img class="XLM"  src="img/XLM.png">
+        <img class="OMG"  src="img/OMG.png">
+        <img class="REQ"  src="img/REQ.png">
+        <img class="LINK" src="img/LINK.png">
+        <img class="NANO" src="img/NANO.png">
+        <img class="WAN"  src="img/WAN.png">
+    </div>   
+    </div>
+    
+    
+
+<div class="PriceBar1">
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright">
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "title": "BTC/USD",
+      "proName": "BITSTAMP:BTCUSD"
+    },
+    {
+      "title": "ETH/USD",
+      "proName": "BITFINEX:ETHUSD"
+    },
+    {
+      "title": "NEO/USD",
+      "proName": "BINANCE:NEOUSD"
+    },
+    {
+      "title": "GAS/USD",
+      "proName": "BINANCE:GASUSD"
+    },
+    {
+      "title": "XMR/USD",
+      "proName": "BITFINEX:XMRUSD"
+    },
+    {
+      "title": "ZEC/USD",
+      "proName": "BITFINEX:ZECUSD"
+    }
+  ],
+  "locale": "uk"
+}
+  </script>
+</div>
+</div>
+</div>
+    
+<div class="PriceBar2">
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright">
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "title": "XLM/USD",
+      "proName": "BINANCE:XLMUSD"
+    },
+    {
+      "title": "OMG/USD",
+      "proName": "BINANCE:OMGUSD"
+    },
+    {
+      "title": "REQ/USD",
+      "proName": "BINANCE:REQUSD"
+    },
+    {
+      "title": "LINK/USD",
+      "proName": "BINANCE:LINKUSD"
+    },
+    {
+      "title": "NANO/USD",
+      "proName": "BINANCE:NANOUSD"
+    },
+    {
+      "title": "WAN/USD",
+      "proName": "BINANCE:WANUSD"
+    }
+  ],
+  "locale": "uk"
 }
 </script>
-
-
+</div>
+</div>
+</div>
     
-    </BODY>
-</html>
 
-<!-- TradingView Widget BEGIN -->
+<div class="Chart"></div>
+
+
 <div class="tradingview-widget-container">
   <div id="tradingview_8d85e"></div>
-  <div class="tradingview-widget-copyright"><a href="https://uk.tradingview.com/symbols/BITSTAMP-BTCUSD/" rel="noopener" target="_blank"><span class="blue-text">BTCUSD chart</span></a> by TradingView</div>
+  <div class="tradingview-widget-copyright"><a href="https://uk.tradingview.com/symbols/BITSTAMP-BTCUSD/" rel="noopener" target="_blank">
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
   new TradingView.widget(
@@ -48,4 +132,9 @@ function UpdateTitle()
   );
   </script>
 </div>
-<!-- TradingView Widget END -->
+</div>
+</div>
+</div>
+</div>
+    
+</html>

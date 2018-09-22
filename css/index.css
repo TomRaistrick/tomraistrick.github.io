@@ -1,0 +1,24 @@
+.div2 {position: relative;}
+.div1 {height: 81.5vh; width: 98.5vw; position: absolute;}
+
+.logos {position: absolute;}
+
+.row1 {width: 100vw;}
+
+.row1 img {margin-top: 1.5%;}
+
+.BTC  {margin-left:13.20%;}
+.ETH  {margin-left:14.75%;}
+.NEO  {margin-left:14.10%;}
+.GAS  {margin-left:14.65%;}
+.XMR  {margin-left:14.70%;}
+.ZEC  {margin-left:14.70%;}
+
+.row2 {margin-top: 2%;}
+
+.XLM  {margin-left:13.20%;}
+.OMG  {margin-left:14.75%;}
+.REQ  {margin-left:14.10%;}
+.LINK {margin-left:14.65%;}
+.NANO {margin-left:14.70%;}
+.WAN  {margin-left:14.70%;}
