@@ -1,7 +1,31 @@
 <html>
+    <head>
+    <title>¥Ξ₳₦I</title>
+    </head>
     
 <link rel="stylesheet" type="text/css" href="css/index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+<script>
+    
+   updateTitle( Callback )
+    
+    function updateTitle(callbackFn)
+     {       
+            $.ajax({
+                      type: "GET",
+                      url: "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD",
+                      dataType: "json",
+                      success: callbackFn
+                  });                                     
+     }
 
+    function Callback (x){
+       console.log(x);
+        document.title = "BTCUSD: $" + x.USD + " - ¥Ξ₳₦I";
+    }
+    
+</script>
 
 <div class="div1">
 <div class="div2">
@@ -106,7 +130,7 @@
 </div>
     
 
-<div class="Chart"></div>
+<div class="Chart">
 
 
 <div class="tradingview-widget-container">
@@ -136,5 +160,5 @@
 </div>
 </div>
 </div>
-    
+</div>
 </html>
